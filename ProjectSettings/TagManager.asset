@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Lego
   - Left Cupboard Door
+  - Sword
+  - Book
+  - Right Cupboard Door
+  - Plushie
   layers:
   - Default
   - TransparentFX

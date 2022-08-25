@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
-    float timer = 60f;
+    public float timer = 60f;
     [SerializeField]
     Slider slider;
 
