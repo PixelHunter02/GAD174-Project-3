@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     {
         mainMenu.SetActive(false);
         mainUI.SetActive(true);
+        Debug.Log("can press Button");
     }
     public void Update()
     {
