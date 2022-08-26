@@ -111,6 +111,7 @@ public class GameManager : MonoBehaviour
     }
     public void MainMenu()
     {
+        mainMenuOpen = true;
         mainMenu.SetActive(true);
         mainUI.SetActive(false);
         this.GetComponent<Timer>().timer = 60f;
@@ -119,6 +120,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        mainMenuOpen = false;
         slider.value = 0f;
         Time.timeScale = 1f;
         mainMenu.SetActive(false);
@@ -127,6 +129,7 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        mainMenuOpen = true;    
         mainMenu.SetActive(true);
         mainUI.SetActive(false);
         Time.timeScale = 0;
