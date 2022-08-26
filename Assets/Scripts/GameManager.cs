@@ -77,21 +77,31 @@ public class GameManager : MonoBehaviour
                     gameObject.GetComponent<AudioSource>().clip = audioClips[2];
                     gameObject.GetComponent<AudioSource>().Play();
                     slider.value += 0.1428f;
+                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
                 }
                 else if(hit.transform.tag == "Book")
                 {
                     Destroy(hit.transform.gameObject);
                     slider.value += 0.1428f;
+                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+                    gameObject.GetComponent<AudioSource>().clip = audioClips[3];
+                    gameObject.GetComponent<AudioSource>().Play();
                 }
                 else if(hit.transform.tag == "Sword")
                 {
                     Destroy(hit.transform.gameObject);
                     slider.value += 0.1428f;
+                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+                    gameObject.GetComponent<AudioSource>().clip = audioClips[3];
+                    gameObject.GetComponent<AudioSource>().Play();
                 }
                 else if(hit.transform.tag == "Plushie")
                 {
                     Destroy(hit.transform.gameObject);
                     slider.value += 0.1428f;
+                    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+                    gameObject.GetComponent<AudioSource>().clip = audioClips[3];
+                    gameObject.GetComponent<AudioSource>().Play();
                 }
                 else
                 {
