@@ -74,6 +74,8 @@ public class GameManager : MonoBehaviour
                 else if(hit.transform.tag == "Lego")
                 {
                     Destroy(hit.transform.gameObject);
+                    gameObject.GetComponent<AudioSource>().clip = audioClips[2];
+                    gameObject.GetComponent<AudioSource>().Play();
                     slider.value += 0.1428f;
                 }
                 else if(hit.transform.tag == "Book")
